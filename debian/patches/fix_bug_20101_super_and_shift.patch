@@ -1,0 +1,66 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ onboard (1.4.1-2kylin7k7) v101; urgency=medium
+ .
+   * bug#20101 【屏幕键盘】super键和shift键没有标注
+Author: liuyuanpeng <liuyuanpeng@kylinos.cn>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- onboard-1.4.1.orig/Onboard/utils.py
++++ onboard-1.4.1/Onboard/utils.py
+@@ -73,8 +73,8 @@ modGroups = {"SHIFT" : ["LFSH"],
+             }
+ 
+ modList = [["LWIN", ("Win",64)],
+-           ["RTSH", ("⇧", 1)],
+-           ["LFSH", ("⇧", 1)],
++           ["RTSH", ("⇧Shift", 1)],
++           ["LFSH", ("⇧Shift", 1)],
+            ["RALT", ("Alt Gr", 128)],
+            ["LALT", ("Alt", 8)],
+            ["RCTL", ("Ctrl", 4)],
+--- onboard-1.4.1.orig/layouts/key_defs.xml
++++ onboard-1.4.1/layouts/key_defs.xml
+@@ -73,9 +73,9 @@ along with this program. If not, see <ht
+     <key_template id='LSGT' keycode='94'/>
+     <key_template id='BKSL' keycode='51'/>
+ 
+-    <key_template id='CAPS' keycode='66'  label='⇪'      modifier='caps'    sticky='true' label_x_align='0.0' sticky_behavior='lock' action='double-stroke'/>
+-    <key_template id='LFSH' keycode='62'  label='⇧'      modifier='shift'   sticky='true' label_x_align='0.0' action='single-stroke'/>
+-    <key_template id='RTSH' keycode='50'  label='⇧'      modifier='shift'   sticky='true' label_x_align='0.0' action='single-stroke'/>
++    <key_template id='CAPS' keycode='66'  label='⇪Caps Lock'      modifier='caps'    sticky='true' label_x_align='0.0' sticky_behavior='lock' action='double-stroke'/>
++    <key_template id='LFSH' keycode='62'  label='⇧Shift'      modifier='shift'   sticky='true' label_x_align='0.0' action='single-stroke'/>
++    <key_template id='RTSH' keycode='50'  label='⇧Shift'      modifier='shift'   sticky='true' label_x_align='0.0' action='single-stroke'/>
+     <key_template id='LCTL' keycode='37'  label='Ctrl'   modifier='control' sticky='true' action='single-stroke'/>
+     <key_template id='RCTL' keycode='105' label='Ctrl'   modifier='control' sticky='true' action='single-stroke'/>
+     <key_template id='LALT' keycode='64'  label='Alt'    modifier='mod1'    sticky='true' action='single-stroke'/>
+--- onboard-1.4.1.orig/onboard-defaults.conf.example
++++ onboard-1.4.1/onboard-defaults.conf.example
+@@ -74,8 +74,8 @@ key-label-font=Ubuntu
+ # Replaces the super key labels specified in Onboards layout files.
+ #
+ # Examples:
+-#superkey-label=Super
+-superkey-label=
++superkey-label=Super
++#superkey-label=
+ 
+ # Super key label, independent size
+ # If set to True/yes/1, super keys will scale their label in their own

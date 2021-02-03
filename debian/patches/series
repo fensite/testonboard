@@ -1,0 +1,14 @@
+0001-Replace-invalid-UTF-8-characters-in-ACPI-events.patch
+1001_desktop-file-fixes.patch
+1002_disable_onboard_on_gnome.patch
+add_translation.patch
+add_translate_in_desktop.patch
+fix_error_spell.patch
+fix_bug12386.patch
+fix_bug_11960.patch
+fix_bug_20101_super_and_shift.patch
+20201119_fix_no_translate.patch
+change_docking_shrink_workarea_false.patch
+change_default_conf.patch
+add_translate.patch
+change_docking-shrink-workarea_false.patch

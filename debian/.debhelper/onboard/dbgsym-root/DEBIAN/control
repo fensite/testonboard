@@ -1,0 +1,14 @@
+Package: onboard-dbgsym
+Package-Type: ddeb
+Source: onboard
+Version: 1.4.1-2kylin7k15
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1355
+Depends: onboard (= 1.4.1-2kylin7k15)
+Section: debug
+Priority: optional
+Description: debug symbols for onboard
+Build-Ids: 4516d94e5ed37dc82d93f0b72e1901f644493d12 f694e8baf56aaa93ebdf5cf634e65a91494156b3
+Original-Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>

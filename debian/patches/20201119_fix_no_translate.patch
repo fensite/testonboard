@@ -1,0 +1,288 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ onboard (1.4.1-2kylin7k8) v101; urgency=medium
+ .
+   * bug#25862 【屏幕键盘】部分界面屏幕键盘文字未汉化
+Author: liuyuanpeng <liuyuanpeng@kylinos.cn>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- onboard-1.4.1.orig/po/zh_CN.po
++++ onboard-1.4.1/po/zh_CN.po
+@@ -333,7 +333,7 @@ msgstr "删除建议(_R)"
+ #: ../data/onboard.desktop.in.h:1 ../Onboard/KbdWindow.py:108
+ #: ../data/onboard-autostart.desktop.in.h:1
+ msgid "Onboard"
+-msgstr "Onboard"
++msgstr "屏幕键盘"
+ 
+ #: ../Onboard/KeyboardWidget.py:1901
+ msgid "Remove word suggestion"
+@@ -372,7 +372,7 @@ msgstr "执行 '{}', {} 失败"
+ 
+ #: ../Onboard/settings.py:316
+ msgid "Onboard Preferences"
+-msgstr "Onboard 首选项"
++msgstr "屏幕键盘 首选项"
+ 
+ #. touch_feedback_size_label: 0=auto, i.e. let Onboard guess
+ #. the size of the label popup.
+@@ -431,7 +431,7 @@ msgstr ""
+ 
+ #: ../Onboard/settings.py:1006
+ msgid "Reset selected theme to Onboard defaults?"
+-msgstr "将选中主题重置为 Onboard 默认设置？"
++msgstr "将选中主题重置为 屏幕键盘 默认设置？"
+ 
+ #: ../Onboard/settings.py:1008
+ msgid "Delete selected theme?"
+@@ -540,11 +540,11 @@ msgstr "按任意键..."
+ 
+ #: ../Onboard/Indicator.py:56
+ msgid "_Show Onboard"
+-msgstr "显示 Onboard(_S)"
++msgstr "显示 屏幕键盘(_S)"
+ 
+ #: ../Onboard/Indicator.py:57
+ msgid "_Hide Onboard"
+-msgstr "隐藏 Onboard(_H)"
++msgstr "隐藏 屏幕键盘(_H)"
+ 
+ #. Translators: label of a menu item. It used to be stock item
+ #. STOCK_PREFERENCES until Gtk 3.10 deprecated those.
+@@ -564,7 +564,7 @@ msgstr "退出(_Q)"
+ 
+ #: ../Onboard/Indicator.py:228 ../Onboard/Indicator.py:231
+ msgid "Onboard on-screen keyboard"
+-msgstr "Onboard 屏幕键盘"
++msgstr "屏幕键盘"
+ 
+ #: ../Onboard/utils.py:1535
+ msgid "failed to create directory '{}': {}"
+@@ -841,7 +841,7 @@ msgstr "启动后自动隐藏"
+ 
+ #: ../settings.ui.h:46
+ msgid "Start Onboard hidden."
+-msgstr "Onboard 启动后自动隐藏。"
++msgstr "屏幕键盘 启动后自动隐藏。"
+ 
+ #: ../settings.ui.h:47
+ msgid "Show/Hide options"
+@@ -849,13 +849,13 @@ msgstr "显示 / 隐藏选项"
+ 
+ #: ../settings.ui.h:48
+ msgid "Show floating _icon when Onboard is hidden"
+-msgstr "当 Onboard 隐藏时显示浮动图标(_I)"
++msgstr "当 屏幕键盘 隐藏时显示浮动图标(_I)"
+ 
+ #: ../settings.ui.h:49
+ msgid ""
+ "Show a floating icon on the desktop when Onboard is hidden. A click on the "
+ "icon makes Onboard reappear."
+-msgstr "当 Onboard 隐藏时在桌面上显示浮动图标。单击该图标可重新显示 Onboard。"
++msgstr "当 屏幕键盘 隐藏时在桌面上显示浮动图标。单击该图标可重新显示 Onboard。"
+ 
+ #: ../settings.ui.h:50
+ msgid "Show when _unlocking the screen"
+@@ -867,7 +867,7 @@ msgid ""
+ "can be used for example to enter the password to dismiss the screensaver "
+ "when it is set to ask for it."
+ msgstr ""
+-"当出现解锁屏幕的对话时显示 Onboard。这样 Onboard 可以在必要时用于输入密码或退"
++"当出现解锁屏幕的对话时显示 屏幕键盘。这样 屏幕键盘 可以在必要时用于输入密码或退"
+ "出屏幕保护程序。"
+ 
+ #: ../settings.ui.h:52
+@@ -888,7 +888,7 @@ msgstr "显示状态图标(_S)"
+ 
+ #: ../settings.ui.h:56
+ msgid "Show the status item. A click on that icon hides or shows Onboard."
+-msgstr "显示状态项。单击该图标可隐藏或显示 Onboard。"
++msgstr "显示状态项。单击该图标可隐藏或显示 屏幕键盘。"
+ 
+ #: ../settings.ui.h:57
+ msgid "Status icon _provider:"
+@@ -968,7 +968,7 @@ msgstr "常居顶端(_F)"
+ 
+ #: ../settings.ui.h:74
+ msgid "Try harder to keep Onboard above anything on-screen."
+-msgstr "尽更大努力保持 Onboard 在屏幕最上层。"
++msgstr "尽更大努力保持 屏幕键盘 在屏幕最上层。"
+ 
+ #: ../settings.ui.h:75
+ msgid "Keep _aspect ratio"
+@@ -1104,13 +1104,13 @@ msgstr "使用系统主题(_S)"
+ 
+ #: ../settings.ui.h:107
+ msgid "Remember what Onboard theme was last used for every system theme."
+-msgstr "记住与每个系统主题所对应使用的 Onboard 主题。"
++msgstr "记住与每个系统主题所对应使用的 屏幕键盘 主题。"
+ 
+ #: ../settings.ui.h:108
+ msgid ""
+ "Snippets are pieces of text which are entered when the corresponding button "
+ "in Onboard is pressed."
+-msgstr "片段是 Onboard 中按下相应按钮时输入的一段文本。"
++msgstr "片段是 屏幕键盘 中按下相应按钮时输入的一段文本。"
+ 
+ #: ../settings.ui.h:109
+ msgctxt "Label of add snippet button on preferences page Snippets."
+@@ -1543,7 +1543,7 @@ msgstr "隐藏悬停按键窗口"
+ 
+ #: ../settings.ui.h:205
+ msgid "Hide the system-provided hover click window while Onboard is running."
+-msgstr "Onboard 运行时隐藏系统提供的悬停单击窗口。"
++msgstr "屏幕键盘 运行时隐藏系统提供的悬停单击窗口。"
+ 
+ #: ../settings.ui.h:206
+ msgid "Enable click type window on exit"
+@@ -1552,7 +1552,7 @@ msgstr "退出时打开按键输入窗�
+ #: ../settings.ui.h:207
+ msgid ""
+ "Always enable the system-provided hover click window when exiting Onboard."
+-msgstr "退出 Onboard 时总是启动系统提供的悬停单击窗口。"
++msgstr "退出 屏幕键盘 时总是启动系统提供的悬停单击窗口。"
+ 
+ #: ../settings.ui.h:208
+ msgid "Hover Click"
+@@ -1560,15 +1560,15 @@ msgstr "悬停单击"
+ 
+ #: ../data/onboard-settings.desktop.in.h:1
+ msgid "Onboard Settings"
+-msgstr "Onboard 设置"
++msgstr "屏幕键盘 设置"
+ 
+ #: ../data/onboard-settings.desktop.in.h:2
+ msgid "Onboard onscreen keyboard settings"
+-msgstr "Onboard 屏幕键盘设置"
++msgstr "屏幕键盘 屏幕键盘设置"
+ 
+ #: ../data/onboard-settings.desktop.in.h:3
+ msgid "Change Onboard settings"
+-msgstr "更改 Onboard 设置"
++msgstr "更改 屏幕键盘 设置"
+ 
+ #: ../Onboard/WPEngine.py:483
+ msgid "Failed to load language model '{}': {} ({})"
+@@ -1644,7 +1644,7 @@ msgstr "数字键盘和功能键"
+ #. translators: this is a 'tooltip' of the key_template 'hide' in keyboard layout 'key_defs.xml'
+ #: ../data/layoutstrings.py:57 ../data/layoutstrings.py:247
+ msgid "Hide Onboard"
+-msgstr "隐藏 Onboard"
++msgstr "隐藏 屏幕键盘"
+ 
+ #. translators: this is a 'tooltip' of the key 'pause-learning.wordlist' in keyboard layout 'word_suggestions.xml'
+ #: ../data/layoutstrings.py:58 ../data/layoutstrings.py:292
+@@ -1679,7 +1679,7 @@ msgstr "中键单击"
+ #. translators: this is a 'tooltip' of the key_template 'move' in keyboard layout 'key_defs.xml'
+ #: ../data/layoutstrings.py:67 ../data/layoutstrings.py:283
+ msgid "Move Onboard"
+-msgstr "移动 Onboard"
++msgstr "移动 屏幕键盘"
+ 
+ #. translators: very short label of the NUMLOCK key
+ #: ../data/layoutstrings.py:69
+@@ -2106,7 +2106,7 @@ msgstr "退出键盘"
+ #. translators: this is a 'tooltip' of the key_template 'quit' in keyboard layout 'key_defs.xml'
+ #: ../data/layoutstrings.py:307
+ msgid "Quit Onboard"
+-msgstr "退出 Onboard 屏幕键盘程序"
++msgstr "退出 屏幕键盘程序"
+ 
+ #. translators: this is a 'tooltip' of the key_template 'layer2' in keyboard layout 'Whiteboard.onboard'
+ #: ../data/layoutstrings.py:316
+@@ -2160,12 +2160,12 @@ msgid ""
+ "Would you like to reconfigure the system to show Onboard when unlocking the "
+ "screen?"
+ msgstr ""
+-"Onboard 可以用来显示对话框以解锁屏幕。例如用来取消带密码的屏幕保护程序等。\n"
++"屏幕键盘 可以用来显示对话框以解锁屏幕。例如用来取消带密码的屏幕保护程序等。\n"
+ "\n"
+ "但是当前系统配置下 Onboard 无法用于解锁屏幕，这可能是因为有另一个程序对系统进"
+-"行了与 Onboard 相冲突的配置。\n"
++"行了与 屏幕键盘 相冲突的配置。\n"
+ "\n"
+-"是否要重新配置系统，以便使用 Onboard 解锁屏幕？"
++"是否要重新配置系统，以便使用 屏幕键盘 解锁屏幕？"
+ 
+ #: ../Onboard/OnboardGtk.py:448
+ msgid ""
+@@ -2176,7 +2176,7 @@ msgid ""
+ "\n"
+ "Would you like to activate it?"
+ msgstr ""
+-"Onboard 被设置成随解锁屏幕对话框一起显示，例如通过这种方式可以解除受密码保护"
++"屏幕键盘 被设置成随解锁屏幕对话框一起显示，例如通过这种方式可以解除受密码保护"
+ "的屏保。\n"
+ "\n"
+ "但是当前系统禁用了这个功能。\n"
+@@ -2209,7 +2209,7 @@ msgstr "以 XEmbed 模式启动，即用
+ 
+ #: ../Onboard/Config.py:250
+ msgid "Allow multiple Onboard instances"
+-msgstr "允许多个 Onboard 实例"
++msgstr "允许多个 屏幕键盘 实例"
+ 
+ #: ../Onboard/Config.py:253
+ msgid ""
+@@ -2276,7 +2276,7 @@ msgid ""
+ msgstr ""
+ "自动显示功能需要 GNOME 辅助功能。\n"
+ "\n"
+-"Onboard 可以立即启动辅助功能，但我们仍然建议您注销并重新登录以确保不受潜在问"
++"屏幕键盘 可以立即启动辅助功能，但我们仍然建议您注销并重新登录以确保不受潜在问"
+ "题影响。\n"
+ "\n"
+ "要现在启动辅助功能吗？"
+@@ -2292,7 +2292,7 @@ msgstr "新的输入设备"
+ 
+ #: ../Onboard/WindowUtils.py:1129
+ msgid "Onboard has detected a new input device"
+-msgstr "Onboard 检测到一个新的输入设备"
++msgstr "屏幕键盘 检测到一个新的输入设备"
+ 
+ #: ../Onboard/WindowUtils.py:1138
+ msgid "Do you want to use this device for keyboard scanning?"
+@@ -2304,7 +2304,7 @@ msgstr "使用设备"
+ 
+ #: ../data/onboard.desktop.in.h:2 ../data/onboard-autostart.desktop.in.h:2
+ msgid "Onboard onscreen keyboard"
+-msgstr "Onboard 屏幕键盘"
++msgstr "屏幕键盘"
+ 
+ #: ../data/onboard.desktop.in.h:3 ../data/onboard-autostart.desktop.in.h:3
+ msgid "Flexible onscreen keyboard"
+@@ -2353,7 +2353,7 @@ msgid ""
+ "\n"
+ "Revert word suggestions to the last backup (recommended)?"
+ msgstr ""
+-"<big>Onboard 无法打开已学习到的单词建议</big>\n"
++"<big>屏幕键盘无法打开已学习到的单词建议</big>\n"
+ "\n"
+ "错误为\n"
+ "<tt>{}</tt>\n"
+@@ -2370,7 +2370,7 @@ msgid ""
+ "The suggestions have to be reset, but the erroneous file will remain at \n"
+ "'{}'"
+ msgstr ""
+-"<big>Onboard 无法打开已学习到的单词建议</big>\n"
++"<big>屏幕键盘无法打开已学习到的单词建议</big>\n"
+ "\n"
+ "错误为：\n"
+ "<tt>{}</tt>\n"

@@ -1,0 +1,84 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ onboard (1.4.1-2kylin7k6) v101; urgency=medium
+ .
+   * bug#11960 屏幕键盘首选项，部分按钮/描述未汉化
+Author: liuyuanpeng <liuyuanpeng@kylinos.cn>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- onboard-1.4.1.orig/po/zh_CN.po
++++ onboard-1.4.1/po/zh_CN.po
+@@ -892,7 +892,7 @@ msgstr "显示状态项。单击该图�
+ 
+ #: ../settings.ui.h:57
+ msgid "Status icon _provider:"
+-msgstr ""
++msgstr "状态图标来源(_P)"
+ 
+ #: ../settings.ui.h:58
+ msgid ""
+@@ -905,11 +905,26 @@ msgid ""
+ "\n"
+ "Requires restart."
+ msgstr ""
++"推荐使用应用图标(默认)以保持广泛的兼容性。Gtk状态图标虽然已经不再受"
++"\n"
++"到许多桌面环境的支持，但仍然可以通过左键调出屏幕键盘，更改设置需要重启。"
+ 
+ #: ../settings.ui.h:63
+ msgid "Desktop Integration"
+ msgstr "桌面集成"
+ 
++#: ../settings.ui.h:63
++msgid "Auto-detect"
++msgstr "自动探测"
++
++#: ../settings.ui.h:63
++msgid "AppIndicator (Unity, KDE)"
++msgstr "应用图标 (Unity, KDE)"
++
++#: ../settings.ui.h:63
++msgid "GtkStatusIcon (MATE)"
++msgstr "Gtk状态图标 (MATE)"
++
+ #: ../settings.ui.h:64
+ msgid "Dock to screen edge"
+ msgstr "固定到屏幕边缘"
+--- onboard-1.4.1.orig/settings.ui
++++ onboard-1.4.1/settings.ui
+@@ -307,15 +307,15 @@
+     <data>
+       <row>
+         <col id="0">0</col>
+-        <col id="1">Auto-detect</col>
++        <col id="1" translatable="yes">Auto-detect</col>
+       </row>
+       <row>
+         <col id="0">1</col>
+-        <col id="1">GtkStatusIcon (MATE)</col>
++        <col id="1" translatable="yes">GtkStatusIcon (MATE)</col>
+       </row>
+       <row>
+         <col id="0">2</col>
+-        <col id="1">AppIndicator (Unity, KDE)</col>
++        <col id="1" translatable="yes">AppIndicator (Unity, KDE)</col>
+       </row>
+     </data>
+   </object>

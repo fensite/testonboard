@@ -1,0 +1,6 @@
+gnome-shell-extension-onboard_1.4.1-2kylin7k15_all.deb gnome optional
+onboard-common_1.4.1-2kylin7k15_all.deb gnome optional
+onboard-data_1.4.1-2kylin7k15_all.deb gnome optional
+onboard-dbgsym_1.4.1-2kylin7k15_amd64.ddeb debug optional automatic=yes
+onboard_1.4.1-2kylin7k15_amd64.buildinfo gnome optional
+onboard_1.4.1-2kylin7k15_amd64.deb gnome optional

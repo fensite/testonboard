@@ -1,0 +1,45 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ onboard (1.4.1-2kylin7k4) v101; urgency=medium
+ .
+   * bug#20115 屏幕键盘中“片段”的描述有错别字
+Author: liuyuanpeng <liuyuanpeng@kylinos.cn>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- onboard-1.4.1.orig/po/zh_CN.po
++++ onboard-1.4.1/po/zh_CN.po
+@@ -766,7 +766,7 @@ msgstr "主题"
+ #. translators: this is a 'tooltip' of the key_template 'layer2' in keyboard layout 'key_defs.xml'
+ #: ../settings.ui.h:27 ../data/layoutstrings.py:88 ../data/layoutstrings.py:340
+ msgid "Snippets"
+-msgstr "片断"
++msgstr "片段"
+ 
+ #: ../settings.ui.h:29
+ msgid "Auto-show"
+@@ -1095,7 +1095,7 @@ msgstr "记住与每个系统主题所�
+ msgid ""
+ "Snippets are pieces of text which are entered when the corresponding button "
+ "in Onboard is pressed."
+-msgstr "片断是 Onboard 中按下相应按钮时输入的一段文本。"
++msgstr "片段是 Onboard 中按下相应按钮时输入的一段文本。"
+ 
+ #: ../settings.ui.h:109
+ msgctxt "Label of add snippet button on preferences page Snippets."

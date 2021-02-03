@@ -1,0 +1,15 @@
+[Desktop Entry]
+_Name=Onboard
+Name[zh_CN]=屏幕键盘
+_GenericName=Onboard onscreen keyboard
+GenericName[zh_CN]=屏幕键盘
+_Comment=Flexible onscreen keyboard
+Comment[zh_CN]=灵活的 GNOME 屏幕键盘
+
+Exec=onboard
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+_Keywords=onscreen;keyboard;accessibility;utility;
+Icon=onboard
+X-Ubuntu-Gettext-Domain=onboard
