@@ -1,7 +1,0 @@
-debian/tmp/etc
-debian/tmp/usr/bin
-debian/tmp/usr/lib
-debian/tmp/usr/share/applications
-debian/tmp/usr/share/glib-2.0
-debian/tmp/usr/share/icons
-debian/tmp/usr/share/man
