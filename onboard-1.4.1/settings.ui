@@ -210,6 +210,7 @@
         <col id="0">1</col>
         <col id="1" translatable="yes">Movement only</col>
       </row>
+      <!-- v10 pro cancels the keyboard zoom function, modified on February 4, 2020
       <row>
         <col id="0">2</col>
         <col id="1" translatable="yes">Corners</col>
@@ -218,6 +219,7 @@
         <col id="0">3</col>
         <col id="1" translatable="yes">All corners and edges</col>
       </row>
+      v10 pro cancels the keyboard zoom function, modified on February 4, 2020 -->
     </data>
   </object>
   <object class="GtkListStore" id="_pages_model">
